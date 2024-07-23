@@ -20,19 +20,7 @@ const CourseListings = () => {
       .then((data) => setCourses(data.courses));
   }, []);
   console.log(courses);
-  const courseElement = courses.map((course) => (
-    <div key={course.courseId}>
-      <div>
-        <h2>{course.courseName}</h2>
-        <p>Instructor: {course.instructorName}</p>
-        <h5>
-          {course.tags.map((tag) => (
-            <span> {tag} , </span>
-          ))}
-        </h5>
-      </div>
-    </div>
-  ));
+ 
   return (
     <>
       <div>

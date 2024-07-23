@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Autocomplete from "@mui/material/Autocomplete";
 import Box from "@mui/material/Box";
-import Chip from "@mui/material/Chip";
 
 interface courses {
   courseId: string;
@@ -29,7 +28,6 @@ const EditcourseDetail = () => {
   const params = useParams();
   const [Name, setName] = useState("");
   const [Instructor, setInstructor] = useState("");
-  const [Tags, setTags] = useState("");
   const [students, setStudents] = useState<string[]>([]);
 
   React.useEffect(() => {
@@ -74,7 +72,7 @@ const EditcourseDetail = () => {
 
   function handleSubmit(event: any) {
     event.preventDefault();
-    console.log(Name, Instructor, Tags, students);
+    console.log(Name, Instructor, students);
   }
 
   return (
