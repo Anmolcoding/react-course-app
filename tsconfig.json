@@ -1,11 +1,18 @@
-{
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+
+  {
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "jsx": "react-jsx",
+      "strict": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true
     },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
-}
+    "include": ["src"],
+    "exclude": ["node_modules"]
+  }
+  

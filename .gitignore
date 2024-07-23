@@ -1,3 +1,5 @@
+# Remove JS File
+*.js
 # Logs
 logs
 *.log
